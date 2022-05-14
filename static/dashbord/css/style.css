@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@400;500&family=Josefin+Sans:ital,wght@0,400;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #11101d;
+    color: #fff;
+    padding: 6px 14px;
+}
+
+.sidebar .logocontent .logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.logocontent .logo i {
+    font-size: 26px;
+    margin-right: 5px;
+}
+
+.logocontent .logo .logoname {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar #btn {
+    position: absolute;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(-50%);
+
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    position: relative;
+    margin: 7px 5px;
+    height: 50px;
+    height: 100%;
+    line-height: 50px;
+    display: flex;
+
+}
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    border-radius: 50px;
+}
+
+.sidebar ul li a span {
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover,
+.active {
+    color: #11101d !important;
+    padding: 0px 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.sidebar ul li a input {
+    position: absolute;
+    top: -20px;
+    height: 40px;
+    width: 200px;
+    left: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: #23203d;
+
+}
+
+.sidebar ul li a input::placeholder {
+    color: #6661a0 !important;
+    font-weight: bold;
+    padding: 100px;
+}
+
+input:focus {
+    outline: none;
+    color: #fff !important;
+    font-weight: 400;
+    padding-left: 14px;
+}
+
+.sidebar ul li a .bx-search-alt-2 {
+    color: #fff;
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    margin-left: -10px;
+    background-color: #23203d;
+    line-height: 50px;
+    padding-left: 20px;
+    border-top-left-radius: 0px;
+
+
+}
+
+
+.sidebar .profilcontent {
+    position: relative !important;
+    bottom: 40px;
+    left: -60px;
+
+
+
+}
+
+.sidebar .profilcontent .profil {
+    position: relative;
+    margin: 25px 3px;
+    padding: 8px 2px 8px 0px;
+    height: 60px;
+    border-radius: 20px;
+
+}
+
+.sidebar .profilcontent .profil .profildetail {
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
+
+}
+
+
+#prfimg {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.profildetail .name_gamer {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.bxs-log-out {
+    transform: translate(-5px, -20px);
+    font-size: 30px;
+    position: absolute;
+    color: #fffffff0;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+}
+
+.home_content {
+    position: absolute;
+    height: 100%;
+    left: 100px;
+    width: calc(100%-100px) !important;
+
+}
+
+.home_contentresize {
+    left: 240px;
+    width: calc(100%-240px) !important;
+}
+
+.navDesactive {
+    width: 5%;
+}
+
+.txt {
+    font-size: 40px;
+}
+
+/* framework */
+.dsbnonre {
+    display: none !important;
+}
+
+.pdt5 {
+    padding: 10px 0px !important;
+}
+
+.mglft4 {
+    margin-left: 52% !important;
+    margin-top: 40% !important;
+}
+
+.rsizebtn {
+    position: relative !important;
+    margin: -4px -20px !important;
+    font-size: 28px !important;
+
+}
+
+.bgtransparnt {
+    background-color: transparent !important;
+    margin: 30px 3px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1px !important;
+}
+
+.profilcontentresixe {
+    position: relative !important;
+    bottom: 0;
+    left: 0 !important;
+
+}
+
+@media (max-width:1200px) {
+    .navDesactive {
+        width: 8%;
+    }
+}
+
+@media (max-width:750px) {
+    .navDesactive {
+        width: 12%;
+    }
+
+    .rsizebtn {
+        position: relative !important;
+        margin: -4px -29px !important;
+        font-size: 28px !important;
+
+    }
+}
+
+@media (max-width:500px) {
+    .navDesactive {
+        width: 15%;
+    }
+}
+
+@media (max-width:340px) {
+    .navDesactive {
+        width: 20%;
+    }
+}

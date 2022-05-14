@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href='{{ url_for("static",filename="SignUp/fonts/icomoon/style.css")}}'>
+
+    <link rel="stylesheet" href='{{ url_for("static",filename="SignUp/css/owl.carousel.min.css")}}'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href='{{ url_for("static",filename="SignUp/css/bootstrap.min.css")}}'>
+
+    <!-- Style -->
+    <link rel="stylesheet" href='{{ url_for("static",filename="SignUp/css/style.css")}}'>
+ <link rel="stylesheet" type="text/css" href='{{ url_for("static",filename="vendor/bootstrap/css/bootstrap.min.css")}}'>
+    	<link rel="stylesheet" type="text/css" href='{{ url_for("static",filename="css/util.css")}}'>
+	<link rel="stylesheet" type="text/css" href='{{ url_for("static",filename="css/main.css")}}'>
+    <title>Sign Up Now</title>
+  </head>
+  <body>
+  
+
+  
+  <div class="content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="form-block">
+                  <div class="mb-4">
+                  <h3>Sign Up !</h3>
+                    {%if 'Thank You' in message %}
+                  <p class="mb-4" style="color: green; font-size:20px;"><br><br> {{message}}<br> GO TO<a  href="login" style="color:#4169e1; font-size:20px;text-decoration:none;">  <u>LOGIN </u></a> IN YOUR ACCOUT</b></p>
+                    {%endif%}
+                     {%if 'Email Already' in message %}
+                  <p class="mb-4" style="color: red;font-size:20px;"><b> <br><br> {{message}} </b></p>
+                    {%endif%}
+                </div>
+                <form action="" method="post">
+                  <div class="form-group first">
+                    <label for="name">FullName</label>
+                    <input type="text" required  name="fullname" minlength="3" maxlength="20" class="form-control" id="name">
+
+                  </div>
+                  <div class="form-group first">
+                    <label for="email">Email</label>
+                    <input type="email"  required minlength="8" maxlength="60"  name="email" class="form-control" id="email">
+
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password"  required minlength="8" maxlength="60" class="form-control" id="password">
+                    
+                  </div>
+                  <div class="form-group last mb-4">
+                    <label for="re-password">Re-type Password</label>
+                    <input type="password" required   name="pass" class="form-control" id="re-password">
+                  </div>
+                    <div class="container-login100-form-btn">
+						<input type="submit" class="login100-form-btn" value="Sign Up !">
+                  </div>
+                </form>
+                <button class="login100-form-btn btnk"><a id="rea" href="/login"> Login </a> </button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+    <script src='{{ url_for("static",filename="SignUp/js/jquery-3.3.1.min.js")}}'></script>
+    <script src='{{ url_for("static",filename="SignUp/js/popper.min.js")}}'></script>
+    <script src='{{ url_for("static",filename="SignUp/js/bootstrap.min.js")}}'></script>
+    <script src='{{ url_for("static",filename="SignUp/js/main.js")}}'></script>
+  </body>
+</html>

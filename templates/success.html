@@ -1,0 +1,144 @@
+]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href='{{ url_for("static",filename="dashbord/css/style.css")}}'>
+
+    <!-- links not include in -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+    <div class="sidebar navDesactive ">
+        <div class="logocontent dsbnonre">
+            <div class="logo"> <i class='bx bxl-meta'></i>
+                <div class="logoname"> meta gaming </div>
+            </div>
+        </div>
+        <div>
+            <i class='bx bx-menu rsizebtn' id="btn"></i>
+        </div>
+        <ul>
+
+            <li>
+                <a href="#" class="haveinput">
+
+                    <i class=' pdt5 bgtransparnt bx bx-search-alt-2'></i>
+                    <input type="text" class="dsbnonre" placeholder="search...">
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+            <br>
+            <li>
+                <a href="#">
+
+                    <i class='bx pdt5 bxs-grid-alt'></i>
+                    <span class="dsbnonre"> Dashboard</span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx  pdt5 bx-user'></i>
+                    <span class="dsbnonre"> User</span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx bxs-message-rounded-dots'></i>
+                    <span class="dsbnonre">Chat </span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx  pdt5 bxs-coin'></i>
+                    <span class="dsbnonre"> Balance</span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx bxs-game'></i>
+                    <span class="dsbnonre"> Games</span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx pdt5 bxs-cart-alt'></i>
+                    <span class="dsbnonre"> Orders</span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx  pdt5 bxs-gift'></i>
+                    <span class="dsbnonre"> Gifts</span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx pdt5 bxs-cog'></i>
+                    <span class="dsbnonre"> Settings</span>
+
+                </a>
+                <!-- <span class="tooltib"> Dashboard</span> -->
+            </li>
+
+        </ul>
+
+        <div class="profilcontent profilcontentresixe ">
+            <div class="profil">
+                <div class="profildetail">
+                    <img src='{{ url_for("static",filename="dashbord/img/prof.jpeg")}}' class="mglft4" id="prfimg">
+                    <div class="name_gamer dsbnonre">
+                        <div class="name">{{FullName}}</div>
+                        <div class="gamename">Devloppeur</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <i class='bx  dsbnonre bxs-log-out'></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="home_content">
+
+        <div class="txt">hi {{FullName}} </div>
+    </div>
+
+
+    <!-- script js -->
+    <script src='{{ url_for("static",filename="dashbord/js/scripte.js")}}'></script>
+</body>
+
+</html>
